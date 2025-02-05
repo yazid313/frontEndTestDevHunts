@@ -29,7 +29,6 @@ export default function Login() {
       );
       if (login) {
         const token = login.data.acces_token;
-
         localStorage.setItem("accessToken", token);
         router.push("/");
       }
